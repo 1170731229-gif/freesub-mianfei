@@ -5,13 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 217.60.182.79
+  server: 94.183.170.135
   port: 443
   udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
   port: 8443
@@ -21,20 +22,14 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: ei.baboon.digital
+  server: 31.76.71.63
   port: 443
   udp: true
-  type: vless
-  uuid: 52d1d193-7a49-4d2e-9d52-c2615704034b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfexhuu4WxxFCJJ1WKgaDUm-3WQW_dK9UTsSCWqxDiE
-    short-id: 380705b1fcb54f4e
-  servername: ei.baboon.digital
-  client-fingerprint: edge
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
