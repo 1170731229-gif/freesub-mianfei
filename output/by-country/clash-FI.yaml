@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: fin.pinkmoon.pro
-  port: 443
+  server: 2.28.225.166
+  port: 33
   udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
-  client-fingerprint: qq
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: nmpyTs_5vKsSKeD_AWJpaqyOhtWEP4B5
 proxy-groups:
 - name: PROXIES
   type: select
