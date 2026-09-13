@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇾🇪 YE 01 - xiaohe",
-      "server": "z-jp1.1card.cc",
-      "server_port": 10010,
-      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
+      "server": "38.180.214.110",
+      "server_port": 5600,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇾🇪 YE 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇾🇪 YE 01 - xiaohe"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
