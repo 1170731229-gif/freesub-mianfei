@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.37",
+      "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -27,7 +27,7 @@
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0",
+      "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
