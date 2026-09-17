@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: max.karmatel.ir
-  port: 55519
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
+  server: 189.74.97.43
+  port: 2087
   udp: true
   type: vless
-  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
+  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
+    path: /73b6faea2d00
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe
 rules:
 - MATCH,PROXIES
