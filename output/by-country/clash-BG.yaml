@@ -12,22 +12,16 @@ proxies:
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
   servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
+  skip-cert-verify: true
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: 64.225.110.247
-  port: 2083
+  server: 192.145.31.5
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   network: ws
   ws-opts:
-    path: /acg/buy/ajax
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
