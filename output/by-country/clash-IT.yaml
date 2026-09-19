@@ -31,6 +31,25 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  server: 172.238.232.239
+  port: 32833
+  udp: true
+  type: vless
+  uuid: 167ed405-7de9-4bff-b1ea-6e3d49c76b0b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20
+    short-id: a0a305ccc8e94aa8
+  servername: www.intel.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +58,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
+  - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +68,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - xiaohe
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
+  - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
 rules:
 - MATCH,PROXIES
