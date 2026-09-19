@@ -6,35 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.21.94.230",
-      "server_port": 443,
-      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
-      "tls": {
-        "enabled": true,
-        "server_name": "FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NmrU9ImDG7jA7oFEem",
-        "headers": {
-          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.59.13",
+      "server": "194.87.59.104",
       "server_port": 2085,
-      "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
+      "uuid": "7b07d862-b698-47c1-884b-3e7dd6c8b862",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -42,18 +16,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "129.151.64.169",
-      "server_port": 31867,
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "64.227.67.161",
+      "server_port": 2083,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/files",
+        "path": "/members/detail/gif",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -65,8 +39,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
@@ -74,8 +47,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
