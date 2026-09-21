@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 45.205.0.6
+  server: 147.90.89.173
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assignment
+    path: /source/buy/f?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 156.226.168.221
   port: 35193
