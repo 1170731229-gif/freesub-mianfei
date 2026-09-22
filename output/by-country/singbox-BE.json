@@ -5,22 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "138.124.183.18",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "141.98.233.6",
+      "server_port": 443,
+      "uuid": "b2593749-691c-428c-9481-14979cba3446",
       "tls": {
         "enabled": true,
-        "server_name": "hub-de-03.hanvpn.cc",
+        "server_name": "xi.tbv.ccwu.cc",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "de03-grpc-8e47a"
+        "type": "ws",
+        "path": "/proxyip=us.xiabibi.cf",
+        "headers": {
+          "Host": "xi.tbv.ccwu.cc"
+        }
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
