@@ -15,15 +15,15 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -38,7 +38,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 4a64b0c2-de7e-4e32-b931-247be6dc4488
+  uuid: ceaf462e-a9fa-4c4b-94be-f192570465a7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
