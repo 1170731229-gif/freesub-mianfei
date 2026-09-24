@@ -4,27 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 185.71.219.128
-  port: 2052
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  server: 151.101.56.7
+  port: 443
   udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
+  type: trojan
+  password: MITIVpN
+  sni: ssl.fastly.com
   skip-cert-verify: false
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 rules:
 - MATCH,PROXIES
