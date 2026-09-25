@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "151.101.56.255",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "172.67.148.211",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "uuid": "a90c264d-3853-4eef-9a3d-628b2d02d15e",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "3-M19.sOutH-AfRiCA-CHANNEL.ccwU.cc",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,8 +23,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/CjBjB9sn5pCvaSwScc",
         "headers": {
-          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+          "Host": "3-M19.SOUth-aFriCA-CHaNnel.CCWu.Cc"
         }
       }
     },
@@ -33,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
