@@ -12,12 +12,12 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",
@@ -40,12 +40,25 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "server": "esbe.vihodest.net",
+      "server_port": 443,
+      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "esbe.vihodest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
+          "short_id": "e93196a756abca09"
+        }
+      }
     },
     {
       "type": "vless",
@@ -69,27 +82,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "esbe.vihodest.net",
-      "server_port": 443,
-      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "esbe.vihodest.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
-          "short_id": "e93196a756abca09"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -98,8 +90,7 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ]
     },
     {
@@ -110,8 +101,7 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
