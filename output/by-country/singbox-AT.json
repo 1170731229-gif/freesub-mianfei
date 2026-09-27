@@ -12,15 +12,29 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "67.159.17.181",
-      "server_port": 30443,
-      "password": "0e1506b1-22a4-4b4f-8082-9ddd2efcd28e",
+      "server": "172.64.150.2",
+      "server_port": 443,
+      "uuid": "adeaebbe-5719-4c28-9b11-5df0d3331c88",
       "tls": {
         "enabled": true,
-        "server_name": "filesconvert.org",
-        "insecure": true
+        "server_name": "Freedom32.Pages.DEV",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets?ed=2560",
+        "headers": {
+          "Host": "freedom32.pages.dev"
+        }
       }
     },
     {

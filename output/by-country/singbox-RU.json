@@ -6,40 +6,24 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "104.21.31.137",
-      "server_port": 443,
-      "uuid": "59c70620-d2f3-4255-9d6f-f4c5103d64ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "172.64.32.108",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": true
-      }
+      "server": "188.225.78.31",
+      "server_port": 2053,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU="
     },
     {
       "type": "vless",

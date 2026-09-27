@@ -12,13 +12,20 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 67.159.17.181
-  port: 30443
+  server: 172.64.150.2
+  port: 443
   udp: true
-  type: hysteria2
-  password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
-  sni: filesconvert.org
-  skip-cert-verify: true
+  type: vless
+  uuid: adeaebbe-5719-4c28-9b11-5df0d3331c88
+  tls: true
+  servername: Freedom32.Pages.DEV
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /assets?ed=2560
+    headers:
+      Host: freedom32.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
