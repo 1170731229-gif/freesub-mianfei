@@ -4,38 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "152.53.1.40",
+      "server_port": 443,
+      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "at.quattro-tech.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "172.64.150.2",
-      "server_port": 443,
-      "uuid": "adeaebbe-5719-4c28-9b11-5df0d3331c88",
-      "tls": {
-        "enabled": true,
-        "server_name": "Freedom32.Pages.DEV",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assets?ed=2560",
-        "headers": {
-          "Host": "freedom32.pages.dev"
-        }
-      }
     },
     {
       "type": "selector",

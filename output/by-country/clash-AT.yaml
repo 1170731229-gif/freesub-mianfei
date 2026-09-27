@@ -5,27 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  server: 152.53.1.40
+  port: 443
+  udp: true
+  type: vless
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
+- name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
   server: 82.110.60.9
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 172.64.150.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: adeaebbe-5719-4c28-9b11-5df0d3331c88
-  tls: true
-  servername: Freedom32.Pages.DEV
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /assets?ed=2560
-    headers:
-      Host: freedom32.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
