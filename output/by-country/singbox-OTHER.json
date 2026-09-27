@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.206.48",
+      "server": "162.159.91.222",
       "server_port": 443,
-      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba",
+      "uuid": "50414e45-4c5f-5a45-5553-723a643df685",
       "tls": {
         "enabled": true,
-        "server_name": "1-M16.AyUtTHAYA2030.KdNS.fR",
+        "server_name": "n3zaxce7u0es.crzl48eiuses.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
+        "path": "/stream/PANEL_ZEUS/723a643df685/loc-0",
         "headers": {
-          "Host": "1-M16.AyUtTHAYA2030.KdNS.fR"
+          "Host": "n3zaxce7u0es.crzl48eiuses.workers.dev"
         }
       }
     },
