@@ -12,13 +12,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: m5nsedvdczx6x06e
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: vpn-hk-004.fastervpn.world
-  port: 443
+  server: telegram.khp25.com
+  port: 1080
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com
   port: 443
@@ -33,25 +32,23 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https%3a%2f%2ft.me%2fclashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
+  sni: https://t.me/wangcai2üá
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   server: 194.99.79.26
@@ -67,45 +64,17 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
+    headers:
+      Host: aksai.org
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  server: 5.223.51.84
+  server: meowkong.nethcloud.top
   port: 443
   udp: true
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
   type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: hk.152568.xyz
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  password: 4cbefb4d-328c-411d-bf76-780df1082df8
+  sni: meowkong.nethcloud.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -113,7 +82,15 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -129,6 +106,14 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: 47.240.80.220
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
