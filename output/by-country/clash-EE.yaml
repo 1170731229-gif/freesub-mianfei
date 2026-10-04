@@ -13,9 +13,9 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   udp: true
   type: vless
