@@ -9,26 +9,40 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
   tls: true
   servername: z5n1.vpnpolar.online
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /beeline
     headers:
       Host: z5n1.vpnpolar.online
+- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
+  server: 91.196.163.140
+  port: 14430
+  udp: true
+  type: vless
+  uuid: e86a3662-9b31-4d59-bc80-9e8644749b95
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 91.196.163.140
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
 rules:
 - MATCH,PROXIES
