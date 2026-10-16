@@ -22,27 +22,6 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -58,6 +37,27 @@
           "enabled": true,
           "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
           "short_id": "31e91d43e553bf32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "31.76.11.243",
+      "server_port": 443,
+      "uuid": "e625f8ef-f935-4c7d-a259-0f154b6842fd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "seal-ro.bypassme.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk",
+          "short_id": "6b69118a7847c4c3"
         }
       }
     },
