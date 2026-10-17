@@ -18,6 +18,17 @@ proxies:
   servername: brointelengence.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,24 +40,31 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: mci1.amir12.ir
+  port: 1222
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: mci.amir12.ir
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: b2a2.velqixa.ir
   port: 39221
   udp: true
@@ -63,6 +81,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +92,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
