@@ -15,18 +15,11 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 146.70.124.85
-  port: 443
+  server: roxnsk.color-shop.ir
+  port: 8080
   udp: true
   type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: random
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: edge10.cyrionflare.com
   port: 2052
@@ -54,6 +47,13 @@ proxies:
   password: gf1:gfhysteria2024
   sni: css.rbxcdn.com
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +64,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +75,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 rules:
 - MATCH,PROXIES
