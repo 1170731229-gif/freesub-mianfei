@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 162.159.153.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 157.228.155.184
   port: 443
   udp: true
@@ -31,9 +16,20 @@ proxies:
     public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
     short-id: e022bfea
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 130.49.161.70
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
@@ -43,22 +39,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 31.59.210.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -68,7 +49,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 45.59.120.217
   port: 443
   udp: true
@@ -80,6 +61,21 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 proxy-groups:
 - name: PROXIES
   type: select
