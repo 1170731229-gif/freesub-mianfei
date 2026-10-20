@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "83.147.18.75",
+      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe",
+      "server": "5.181.2.168",
       "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
+      "uuid": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "hr1-4v.zvcorp24.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "public_key": "FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg",
+          "short_id": "86afa150bc3a48f6"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
