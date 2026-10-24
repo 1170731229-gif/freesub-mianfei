@@ -5,23 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "83.147.18.75",
-      "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
+      "server": "111.90.143.184",
+      "server_port": 61111,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "public_key": "jT5prLDhvJ86zZVz5pDX907oQbeZ0Hyb_VcDSiJxQQU",
+          "short_id": "1378f725da558887"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
