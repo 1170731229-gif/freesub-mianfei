@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: ams1.rvpn.app
+  server: 178.253.16.185
   port: 8388
   udp: true
   type: ss
@@ -41,6 +41,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
