@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
-  server: 188.114.98.0
+  server: 8.35.211.242
   port: 443
   udp: true
   type: vless
