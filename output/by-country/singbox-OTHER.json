@@ -6,20 +6,20 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.15.251",
+      "server": "www.ubuntuupdates.com",
       "server_port": 443,
-      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
+      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.windowssearchtools.com",
+        "server_name": "www.ubuntuupdates.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
         "path": "/truth",
         "headers": {
-          "Host": "www.windowssearchtools.com"
+          "Host": "www.ubuntuupdates.com"
         }
       }
     },
