@@ -25,7 +25,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: in002.zestapp778.com
+  port: 42733
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 122.176.216.52
   port: 443
   udp: true
@@ -40,7 +50,7 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇮🇳 印度 (India) 04 - xiaohe
+- name: 🇮🇳 印度 (India) 05 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -51,15 +61,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: in002.zestapp778.com
-  port: 42733
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
