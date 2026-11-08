@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 208.103.161.16
-  port: 2096
-  udp: true
-  type: trojan
-  password: hWsj5AwIRPF8
-  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 70.34.252.255
   port: 443
   udp: true
@@ -23,7 +12,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -33,19 +22,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 2.26.255.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
