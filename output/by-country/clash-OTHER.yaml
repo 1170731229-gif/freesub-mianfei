@@ -5,30 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.67.156.147
+  server: 104.21.89.181
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   tls: true
-  servername: jp3.yohototo.top
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /a8b8606819ef
     headers:
-      Host: jp3.yohototo.top
+      Host: ave-qualifications-choices-populations.trycloudflare.com
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: 172.67.190.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  tls: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /a8b8606819ef
+    headers:
+      Host: ave-qualifications-choices-populations.trycloudflare.com
+- name: 🌐 其他地区 (Other) 03 - xiaohe
+  server: skk.moe
+  port: 443
+  udp: true
+  type: vless
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  tls: true
+  servername: ave-qualifications-choices-populations.trycloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /a8b8606819ef
+    headers:
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🌐 其他地区 (Other) 02 - xiaohe
+  - 🌐 其他地区 (Other) 03 - xiaohe
 rules:
 - MATCH,PROXIES
