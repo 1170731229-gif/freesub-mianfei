@@ -5,18 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 185.71.216.94
-  port: 2195
+  server: 87.76.154.28
+  port: 57231
   udp: true
   type: vless
-  uuid: 9654f1a9-8dbc-4897-85ea-c077a52b3857
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
-    short-id: 3869d49a9a79e06a
-  servername: www.apple.com
-  client-fingerprint: chrome
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 proxy-groups:
 - name: PROXIES
   type: select
