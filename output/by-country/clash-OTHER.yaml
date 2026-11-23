@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.94.203
+  server: 172.67.139.189
   port: 443
   udp: true
   type: vless
-  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
   servername: fr-free.fastestrelay.com
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl-us-free
+    path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
 proxy-groups:

@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "chatgpt.com",
+      "server": "104.18.32.47",
       "server_port": 443,
       "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
       "tls": {
