@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
+  server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   udp: true
   type: vless
