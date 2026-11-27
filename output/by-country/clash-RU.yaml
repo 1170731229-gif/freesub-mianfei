@@ -19,33 +19,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 200.169.179.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 78.159.246.83
-  port: 445
-  udp: true
-  type: vless
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  tls: true
-  reality-opts:
-    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 136.148.83.69
   port: 443
   udp: true
@@ -53,7 +26,19 @@ proxies:
   password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
   sni: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 201.51.12.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 147.45.175.81
   port: 443
   udp: true
@@ -62,22 +47,36 @@ proxies:
   tls: true
   servername: xssite.webredirect.org
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 196.196.148.85
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 15b171g.nl7.h1clayd.click
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 85.8.201.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.mornismp.ru
+  skip-cert-verify: false
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
